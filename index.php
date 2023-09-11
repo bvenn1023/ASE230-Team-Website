@@ -4,35 +4,35 @@ $data=[
 	['firstname'=>'Hunter',
 	'lastname'=>'Perry',
 	'title'=>'Member',
-	'summary' => 'Motivated informatics student seeking an internship in Cybersecurity or Networking to gain hands-on experience while finishing college. Self-Motivated, good communication skills with a desire to learn and succeed.',
+    'summary' => 'Motivated informatics student seeking an internship in Cybersecurity or Networking to gain hands-on experience while finishing college. Self-Motivated, good communication skills with a desire to learn and succeed.',
 	'experience company'=>'FedEx Freight',
-	'experience' => 'Forklift Operator    ',
+	'experience' => 'Forklift Operator	',
 	'experience years' => '2022-present',
-    	'experience des'=>'As a team worker for FedEx Freight, we establish team work with allowing ourselves to communicate with one another and to move freight to its destination.',
+	'experience des'=>'As a team worker for FedEx Freight, we establish team work with allowing ourselves to communicate with one another and to move freight to its destination.',
 	'experienceacc1'=>'Collaborate with supervisor and other warehouse staff to coordinate work.',
-	'email'=>'perryh2@mymail.nku.edu',
+	'email'=>'perryh@mymail.nku.edu',
 	'number'=>'012345678',
-	'linkedin'=>'linkedln.com/hunter-perry01',
-    	'github'=>'github.com/hunterperry21',
-    	'website'=>'hunterperry.com',
-    	'achievements' => 'Persuing Certifications',
-   	'education' => 'Bachelor of Science in Cybersecurity, Bachelor of Arts in Communications',
-    	'education year' => '2019-2024',
-   	'school' => 'Northern Kentucky University',
-   	'awards' => 'Persing Certifications',
-    	'interests' => 'Hiking, Concerts, Baseball',
-    	'languages' => 'English',
-    	'ex1_tech1' => 'VmWare',
-    	'ex1_tech2' => 'Java',
-    	'ex1_tech3' => 'MicroSoft',
-    	'ex1_tech4' => 'WebDesign',
-    	'ex1_tech5' => '',
-    	'ex2_tech1' => '',
-    	'ex2_tech2' => 'Troubleshooting',
-    	'ex2_tech3' => '',
+	'linkedin'=>'linkedln.com/hunter-perry',
+	'github'=>'github.com/hunter-perry',
+	'website'=>'hunterperry.com',
+	'achievements' => '',
+	'education' => '',
+	'education year' => '',
+	'school' => 'Northern Kentucky University',
+	'awards' => '',
+	'interests' => '',
+	'languages' => '',
+	'ex1_tech1' => '',
+	'ex1_tech2' => '',
+	'ex1_tech3' => '',
+	'ex1_tech4' => '',
+	'ex1_tech5' => '',
+	'ex2_tech1' => '',
+	'ex2_tech2' => '',
+	'ex2_tech3' => '',
 	'ex2_tech4' => '',
 	'ex2_tech5' => ''
-	'dob' => '04/02/2002'
+	],
 	
 	['firstname'=>'Brady',
 	'lastname'=>'Venneman',
@@ -64,8 +64,8 @@ $data=[
 	'ex2_tech2' => 'Troubleshooting',
 	'ex2_tech3' => 'Configuration',
 	'ex2_tech4' => 'Security Policies',
-	'ex2_tech5' => 'Time Management',
-	'dob' => '04/02/2002'
+	'ex2_tech5' => 'Time Management'
+
 	],
 	
 	['firstname'=>'Will',
@@ -87,25 +87,40 @@ a remote or on-site Cybersecurity/IT internship in the Cincinnati metropolitan a
 	'github'=>'github.com/will-cuthbert',
 	'website'=>'willcuthbert.com',
 	'achievements' => '',
-	'education' => 'B.S. in Cybersecurity',
-	'education year' => '2021-2025',
+	'education' => '',
+	'education year' => '',
 	'school' => 'Northern Kentucky University',
-	'awards' => 'Deans List',
-	'interests' => 'Hiking',
-	'languages' => 'English',
-	'ex1_tech1' => 'inStock',
-	'ex1_tech2' => 'TransView',
+	'awards' => '',
+	'interests' => '',
+	'languages' => '',
+	'ex1_tech1' => '',
+	'ex1_tech2' => '',
 	'ex1_tech3' => '',
 	'ex1_tech4' => '',
 	'ex1_tech5' => '',
-	'ex2_tech1' => 'Windows',
+	'ex2_tech1' => '',
 	'ex2_tech2' => '',
 	'ex2_tech3' => '',
 	'ex2_tech4' => '',
-	'ex2_tech5' => '',
-	'dob' => ''
+	'ex2_tech5' => ''
 	]
 ];
+
+function displayMemberCard($data, $i) {
+    
+				if (isset($data[$i]['firstname'], $data[$i]['lastname'], $data[$i]['title'])) {
+					$firstname = $data[$i]['firstname'];
+					$lastname = $data[$i]['lastname'];
+					$title = $data[$i]['title'];
+			
+					echo '<div class="member-card">';
+					echo "<p>Name: $firstname $lastname</p>";
+					echo "<p>Title: $title</p>";
+					echo '</div>';
+				} else {
+					echo "Invalid member information for member #$i.";
+				}
+			}?>
 ?>
 
 
@@ -138,45 +153,28 @@ a remote or on-site Cybersecurity/IT internship in the Cincinnati metropolitan a
 <body>
     <article class="resume-wrapper text-center position-relative">
 	    <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
-			<h1 class="py-4 text-center"><?php 'OUR AMAZING TEAM'; ?></h1>
+			<h1 class="py-4 text-center"><?php echo'OUR AMAZING TEAM'; ?></h1>
 			
 			<?php for($i=0;$i<count($data);$i++){?>
-				
 		    <header class="resume-header pt-4 pt-md-0">
 			    <div class="row">
 				    <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
-				        <img class="picture" src="assets/images/profile.jpg" alt="">
+				        <img class="picture" src=<?php echo 'assets/images/profile'.strval($i).'.jpg'?> alt="" height="225">
 				    </div><!--//col-->
 				    <div class="col">
 					    <div class="row p-4 justify-content-center justify-content-md-between">
 						    <div class="primary-info col-auto">
-							    <!-- <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase"><?=$data[$i]['firstname']; ?> </h1>
-							    <div class="title mb-3"><?=$data[$i]['title'];?></div> -->
-								<div class="title mb-3"><?=displayMemberCard($data, $i);?></div>
+							    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase"><?=$data[$i]['firstname']; ?> </h1>
+							    <div class="title mb-3"><?php displayMemberCard($data,$i);?></div>
 								<a href="detail.php?name=<?=$i;?>" class="btn btn-secondary"><?php echo 'See full profile'; ?></a>
 						    </div><!--//primary-info-->
 						    <div class="secondary-info col-auto mt-2">
 						    </div><!--//secondary-info-->
 					    </div><!--//row-->
-				    </div><!--//col--> 
+				    </div><!--//col-->
 			    </div><!--//row-->
 		    </header>
-			<?php }
-			function displayMemberCard($data, $i) {
-    
-				if (isset($data[$i]['firstname'], $data[$i]['lastname'], $data[$i]['title'])) {
-					$firstname = $data[$i]['firstname'];
-					$lastname = $data[$i]['lastname'];
-					$title = $data[$i]['title'];
-			
-					echo '<div class="member-card">';
-					echo "<p>Name: $firstname $lastname</p>";
-					echo "<p>Title: $title</p>";
-					echo '</div>';
-				} else {
-					echo "Invalid member information for member #$i.";
-				}
-			}?>
+			<?php }?>
 					    
 	    </div>
     </article> 
@@ -191,4 +189,3 @@ a remote or on-site Cybersecurity/IT internship in the Cincinnati metropolitan a
 
 </body>
 </html> 
-
