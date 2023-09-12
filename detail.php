@@ -4,6 +4,7 @@ $data=[
 ['firstname'=>'Hunter',
     'lastname'=>'Perry',
     'title'=>'Member',
+    'dob' => '04/02/2001',	
     'summary' => 'Motivated informatics student seeking an internship in Cybersecurity or Networking to gain hands-on experience while finishing college. Self-Motivated, good communication skills with a desire to learn and succeed.',
     
     'experience' =>[
@@ -53,6 +54,7 @@ $data=[
 	['firstname'=>'Brady',
 	'lastname'=>'Venneman',
 	'title'=>'Member',
+	'dob' => '04/02/2002',
 	'summary'=>'Detail-oriented with proven experience in analyzing and implementing effective security measures. Skilled in conducting risk assessments, developing security policies and procedures, and detecting and mitigating potential threats. Strong knowledge of network security, vulnerability management, and incident response. Looking to leverage my skills and expertise in a challenging and rewarding role in cybersecurity ',
 	'experience'=>[
 		['job title'=>'Information Security Analyst',
