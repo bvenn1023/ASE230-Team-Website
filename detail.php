@@ -1,50 +1,68 @@
 <?php 
 $data=[
 
-	['firstname'=>'Hunter',
-	'lastname'=>'Perry',
-	'title'=>'Member',
-	'summary' => 'Motivated informatics student seeking an internship in Cybersecurity or Networking to gain hands-on experience while finishing college. Self-Motivated, good communication skills with a desire to learn and succeed.',
-	'experience company'=>'FedEx Freight',
-	'experience' => 'Forklift Operator    ',
-	'experience years' => '2022-present',
-    	'experience des'=>'As a team worker for FedEx Freight, we establish team work with allowing ourselves to communicate with one another and to move freight to its destination.',
-	'experienceacc1'=>'Collaborate with supervisor and other warehouse staff to coordinate work.',
-	'email'=>'perryh2@mymail.nku.edu',
-	'number'=>'012345678',
-	'linkedin'=>'linkedln.com/hunter-perry01',
-    	'github'=>'github.com/hunterperry21',
-    	'website'=>'hunterperry.com',
-    	'achievements' => 'Persuing Certifications',
-   	'education' => 'Bachelor of Science in Cybersecurity, Bachelor of Arts in Communications',
-    	'education year' => '2019-2024',
-   	'school' => 'Northern Kentucky University',
-   	'awards' => 'Persing Certifications',
-    	'interests' => 'Hiking, Concerts, Baseball',
-    	'languages' => 'English',
-    	'ex1_tech1' => 'VmWare',
-    	'ex1_tech2' => 'Java',
-    	'ex1_tech3' => 'MicroSoft',
-    	'ex1_tech4' => 'WebDesign',
-    	'ex1_tech5' => '',
-    	'ex2_tech1' => '',
-    	'ex2_tech2' => 'Troubleshooting',
-    	'ex2_tech3' => '',
-	'ex2_tech4' => '',
-	'ex2_tech5' => ''
-	'dob' => '04/02/2002'
-	
+['firstname'=>'Hunter',
+    'lastname'=>'Perry',
+    'title'=>'Member',
+    'summary' => 'Motivated informatics student seeking an internship in Cybersecurity or Networking to gain hands-on experience while finishing college. Self-Motivated, good communication skills with a desire to learn and succeed.',
+    
+    'experience' =>[
+					['job title'=>'Forklift Operator',
+					'experience des'=>'As a team worker for FedEx Freight, we establish team work with allowing ourselves to communicate with one another and to move freight to its destination.',
+					'experience years' => '2022-present',
+					'experienceacc1'=>'Collaborate with supervisor and other warehouse staff to coordinate work.',
+					'experience company'=>'FedEx Freight',
+					'experienceacc1'=>'',
+					'achievements'=>[],
+					'tech used'=>['VmWare','Java','Microsoft','Webdesign'],
+					]
+				],
+    'email'=>'perryh@mymail.nku.edu',
+    'number'=>'012345678',
+    'linkedin'=>'linkedln.com/hunter-perry',
+    'github'=>'github.com/hunter-perry',
+    'website'=>'hunterperry.com',
+    'achievements' => '',
+    'education' => '',
+    'education year' => '',
+    'school' => 'Northern Kentucky University',
+    'awards' => 'Persing Certifications',
+    'interests' => 'Hiking, Concerts, Baseball',
+    'languages' => 'English',
+   
+    'ex1_tech5' => '',
+    'ex2_tech1' => '',
+    'ex2_tech2' => 'Troubleshooting',
+    'ex2_tech3' => '',
+    'ex2_tech4' => '',
+    'ex2_tech5' => '',
+		'skills'=>[
+		['name'=>'Linux',
+		'percent'=>'75'
+		],
+		['name'=>'Java',
+		'percent'=>'50'
+		],
+		['name'=>'python',
+		'percent'=>'50'
+		]
+		
+	]
     ],
 	
 	['firstname'=>'Brady',
 	'lastname'=>'Venneman',
 	'title'=>'Member',
 	'summary'=>'Detail-oriented with proven experience in analyzing and implementing effective security measures. Skilled in conducting risk assessments, developing security policies and procedures, and detecting and mitigating potential threats. Strong knowledge of network security, vulnerability management, and incident response. Looking to leverage my skills and expertise in a challenging and rewarding role in cybersecurity ',
-	'experience'=>'Information Security Analyst',
-	'experience des'=>'As an Information Security Analyst, I\'ve conducted comprehensive vulnerability assessments, developed and enforced security policies in line with industry standards, and effectively managed security incident response plans to safeguard against cyber threats.',
-	'experience years'=>'2023-present',
-	'experience company'=>'Cintas',
-	'experienceacc1'=>'Conducted thorough vulnerability assessments, identifying critical security flaws, and supplying actionable recommendations that mitigated potential risks',
+	'experience'=>[
+		['job title'=>'Information Security Analyst',
+		'experience des'=>'As an Information Security Analyst, I\'ve conducted comprehensive vulnerability assessments, developed and enforced security policies in line with industry standards, and effectively managed security incident response plans to safeguard against cyber threats.',
+		'experience years'=>'2023-present',
+		'experience company'=>'Cintas',
+		'achievements'=>['Conducted thorough vulnerability assessments, identifying critical security flaws, and supplying actionable recommendations that mitigated potential risks',],
+		'tech used'=>['CrowdStrike','Proofpoint','Qualys','Incident Response','Zerofox'],
+		]
+	],
 	'email'=>'vennemanb1@mymail.nku.edu',
 	'number'=>'012345678',
 	'linkedin'=>'linkedln.com/brady-venneman',
@@ -57,33 +75,55 @@ $data=[
 	'awards' => 'Pursuing Certifications',
 	'interests' => 'Movies, TryHackMe, Basketball',
 	'languages' => 'English',
-	'ex1_tech1' => 'CrowdStrike',
-	'ex1_tech2' => 'Proofpoint',
-	'ex1_tech3' => 'Qualys',
-	'ex1_tech4' => 'Incident Response',
-	'ex1_tech5' => 'Zerofox',
+	
 	'ex2_tech1' => 'Cabling',
 	'ex2_tech2' => 'Troubleshooting',
 	'ex2_tech3' => 'Configuration',
 	'ex2_tech4' => 'Security Policies',
 	'ex2_tech5' => 'Time Management',
-	'dob' => '04/02/2002'
+		'skills'=>[
+		['name'=>'Linux',
+		'percent'=>'75'
+		],
+		['name'=>'Java',
+		'percent'=>'50'
+		],
+		['name'=>'python',
+		'percent'=>'50'
+		]
+		
+	]
 
 	],
 	
 	['firstname'=>'Will',
 	'lastname'=>'Cuthbert',
+	'dob'=>'07/29/2003',
 	'title'=>'Member',
 	'summary'=>'Current Cybersecurity student with experiences in hardware salvage and Python development. Seeking
-a remote or on-site Cybersecurity/IT internship in the Cincinnati metropolitan area.',
-	'experience'=>'Grocery Store Clerk',
-	'experience des'=>'Provide excellent customer service, lead and train junior associates, manage and remove inventory',
-	'experience years'=>'2020-2021, 2022-present',
-	'experience company'=>'Kroger',
-	'experienceacc1'=>'Over one year of service',
-	'ex1_tech1'=>'inStock',
-	'experience2'=>'High School Tech Aide',
-	'experience2 des'=>'Tear-down outdated computer labs, update outdated systems, manage and remove inventory',
+    a remote or on-site Cybersecurity/IT internship in the Cincinnati metropolitan area.',
+	//each job is its own array so that the for loop can index items by job
+	'experience'=> [
+					['job title'=>'Store Clerk',
+					'experience des'=>'Provide excellent customer service, lead and train junior associates, manage and remove inventory',
+					'experience years'=>'2020-2021, 2022-present',
+					'experience company'=>'Kroger',
+					'experienceacc1'=>'Over one year of service',
+					'tech used'=>['inStock'],
+					'achievements'=>['one year of service']
+					
+					],
+				['job title'=>'High School Tech Aide',
+					'experience des'=>'Tear-down outdated computer labs, update outdated systems, manage and remove inventory',
+					'experience years'=>'2020-2021',
+					'experience company'=>'Simon Kenton High School',
+					'tech used'=>['windows 10'],
+					'achievements'=>[]
+				]
+		
+		],
+		
+
 	'email'=>'cuthbertw@mymail.nku.edu',
 	'number'=>'012345678',
 	'linkedin'=>'linkedlin.com/will-cuthbert',
@@ -96,23 +136,22 @@ a remote or on-site Cybersecurity/IT internship in the Cincinnati metropolitan a
 	'awards' => 'Deans List',
 	'interests' => 'Hiking',
 	'languages' => 'English',
-	'ex1_tech1' => 'inStock',
-	'ex1_tech2' => 'TransView',
-	'ex1_tech3' => '',
-	'ex1_tech4' => '',
-	'ex1_tech5' => '',
-	'ex2_tech1' => 'Windows',
-	'ex2_tech2' => '',
-	'ex2_tech3' => '',
-	'ex2_tech4' => '',
-	'ex2_tech5' => '',
-	'dob' =>''
+	'skills'=>[
+		['name'=>'Linux',
+		'percent'=>'75'
+		],
+		['name'=>'Java',
+		'percent'=>'50'
+		],
+		['name'=>'python',
+		'percent'=>'50'
+		]
+		
+	]
+
 	]
 ];
 $index=$_GET['name'];
-
-//echo $index;
-//echo $data[$index]['firstname'];
 
 function calculateAge($dateOfBirth) {
     // Convert the date of birth and current date to DateTime objects
@@ -128,8 +167,41 @@ function calculateAge($dateOfBirth) {
     return $age;
 }
 
+function fillExperience($experienceItem){
+global $data;
+global $index;
+
+					?>
+					
+									    
+									   
+											
+										        <h3 class="resume-position-title font-weight-bold mb-1"><?php echo $data[$index]['experience'][$experienceItem]['job title'];?></h3>
+										        <div class="resume-company-name ms-auto"><?php echo $data[$index]['experience'][$experienceItem]['experience company'];?></div>
+										    </div><!--//row-->
+										    <div class="resume-position-time"><?php echo $data[$index]['experience'][$experienceItem]['experience years'];?></div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <p><?php echo $data[$index]['experience'][$experienceItem]['experience des'];?></p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold"><?php echo 'Achievements:'; ?></h4>
+										    
+										    <ul><?php for ($j=0;$j<count($data[$index]['experience'][$experienceItem]['achievements']);$j++){?>
+											    
+													 <li> <?php echo $data[$index]['experience'][$experienceItem]['achievements'][$j]; ?></li>
+
+										    </ul>
+											<?php }?>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold"><?php echo 'Technologies used:';?></h4>
+										    <ul class="list-inline">
+											<?php for ($j=0;$j<count($data[$index]['experience'][$experienceItem]['tech used']);$j++){?>
+											<li class="list-inline-item"><span class="badge bg-secondary badge-pill"> <?php echo $data[$index]['experience'][$experienceItem]['tech used'][$j];}?> </span></li>
+											    
+											    
+										    </ul>
+			
+	<?php } ?>
 	
-?>
+
 
 
 <!DOCTYPE html>
@@ -166,7 +238,7 @@ function calculateAge($dateOfBirth) {
 		    <header class="resume-header pt-4 pt-md-0">
 			    <div class="row">
 				    <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
-				        <img class="picture" src="assets/images/profile.jpg" alt="">
+				        <img class="picture" src=<?php echo 'assets/images/profile'.strval($index).'.jpg';?> alt="" height="250">
 				    </div><!--//col-->
 				    <div class="col">
 					    <div class="row p-4 justify-content-center justify-content-md-between">
@@ -199,80 +271,28 @@ function calculateAge($dateOfBirth) {
 					    <p class="mb-0"><?php echo $data[$index]['summary'];?></p>
 				    </div>
 			    </section><!--//summary-section-->
-			    <div class="row">
+		<div class="row">
 				    <div class="col-lg-9">
 					    <section class="resume-section experience-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"><?php echo 'Work Experience'; ?></h2>
 						    <div class="resume-section-content">
 							    <div class="resume-timeline position-relative">
 								    <article class="resume-timeline-item position-relative pb-5">
-									    
+									    <?php for ($i=0;$i<count($data[$index]['experience']);$i++){?>
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1"><?php echo $data[$index]['experience']?></h3>
-										        <div class="resume-company-name ms-auto"><?php echo $data[$index]['experience company'];?></div>
-										    </div><!--//row-->
-										    <div class="resume-position-time"><?php echo $data[$index]['experience years'];?></div>
-									    </div><!--//resume-timeline-item-header-->
-									    <div class="resume-timeline-item-desc">
-										    <p><?php echo $data[$index]['experience des'];?></p>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold"><?php echo 'Achievements:'; ?></h4>
-										    
-										    <ul>
-											    <?php if(isset($data[$index]['experienceacc1'])){
-													?> <li> <?php echo $data[$index]['experienceacc1'];} ?></li>
-											    <?php if(isset($data[$index]['experienceacc2'])){
-													?><li> <?php echo $data[$index]['experienceacc2'];} ?></li>
-											    <?php if(isset($data[$index]['experienceacc3'])){
-													?> <li> <?php echo $data[$index]['experienceacc3'];} ?></li>
-											    <?php if(isset($data[$index]['experienceacc4'])){
-													?><li> <?php echo $data[$index]['experienceacc4'];} ?></li>
-										    </ul>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold"><?php echo 'Technologies used:';?></h4>
-										    <ul class="list-inline">
 											
-											<li class="list-inline-item"><span class="badge bg-secondary badge-pill"> <?php if(isset($data[$index]['ex1_tech1'])){echo $data[$index]['ex1_tech1'];}?></span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex1_tech2'])){echo $data[$index]['ex1_tech2'];}?></span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex1_tech3'])){echo $data[$index]['ex1_tech3'];}?></span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex1_tech4'])){echo $data[$index]['ex1_tech4'];}?></span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex1_tech5'])){echo $data[$index]['ex1_tech5'];}?></span></li>
-										    </ul>
+										        <?php fillExperience($i)?>
+			
 									    </div><!--//resume-timeline-item-desc-->
-
+										<?php } ?>
 								    </article><!--//resume-timeline-item-->
-								    
-								    <article class="resume-timeline-item position-relative pb-5">
-									    
-									    <div class="resume-timeline-item-header mb-2">
-										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1"><?php if(isset($data[$index]['experience2'])){echo $data[$index]['experience2'];} ?>  </h3>
-										        <div class="resume-company-name ms-auto"><?php if(isset($data[$index]['experience2 company'])){echo $data[$index]['experience2 company'];}?></div>
-										    </div><!--//row-->
-										    <div class="resume-position-time"><?php if (isset($data[$index]['experience2 years'])){echo $data[$index]['experience2 years'];}?></div>
-									    </div><!--//resume-timeline-item-header-->
-									    <div class="resume-timeline-item-desc">
-										    <p><?php if(isset($data[$index]['experience2 des'])){echo $data[$index]['experience2 des'];}?></p>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold"><?php echo 'Achievements';?></h4>
-										    <p><?php echo $data[$index]['achievements']?></p>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold"><?php echo 'Technologies used:';?></h4>
-										    <ul class="list-inline">
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex2_tech1'])){echo $data[$index]['ex2_tech1'];}?></span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex2_tech2'])){echo $data[$index]['ex2_tech2'];}?></span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex2_tech3'])){echo $data[$index]['ex2_tech3'];}?></span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex2_tech4'])){echo $data[$index]['ex2_tech4'];}?></span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?php if(isset($data[$index]['ex2_tech5'])){echo $data[$index]['ex2_tech5'];}?></span></li>
-										    </ul>
-									    </div><!--//resume-timeline-item-desc-->
-
-								    </article><!--//resume-timeline-item-->					    
+								
 							    </div><!--//resume-timeline-->
-							    
-							    
-							    
-							    
-							    
-							    
-						    </div>
+							
+					    
+						   <!--</div>-->
+							
 					    </section><!--//projects-section-->
 				    </div>
 				    <div class="col-lg-3">
@@ -281,37 +301,16 @@ function calculateAge($dateOfBirth) {
 						    <div class="resume-section-content">
 						        <div class="resume-skill-item">
 							        <ul class="list-unstyled mb-4">
+									<?php for ($i=0;$i<count($data[$index]['skills']);$i++){?>
 								        <li class="mb-2">
-								            <div class="resume-skill-name"><?php echo 'Angular';?></div>
+								            <div class="resume-skill-name"><?php echo $data[$index]['skills'][$i]['name'];?></div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?php echo $data[$index]['skills'][$i]['percent'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
-								        <li class="mb-2">
-								            <div class="resume-skill-name"><?php echo 'React';?></div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li class="mb-2">
-								            <div class="resume-skill-name"><?php echo 'JavaScript';?></div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
+							
+									<?php }?>
 								        
-								        <li class="mb-2">
-								            <div class="resume-skill-name"><?php echo 'Node.js';?></div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li class="mb-2">
-								            <div class="resume-skill-name"><?php echo 'HTML/CSS/SASS/LESS';?></div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
 							        </ul>
 						        </div><!--//resume-skill-item-->
 						        <div class="resume-skill-item">
@@ -335,14 +334,11 @@ function calculateAge($dateOfBirth) {
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
 								    <li class="mb-2">
-								        <div class="resume-degree-org"><?php echo $data[$index]['education']?></div>
+								        <div class="resume-degree font-weight-bold"><?php echo $data[$index]['education']?></div>
+								        <div class="resume-degree-org"><?php echo $data[$index]['awards']?></div>
 								        <div class="resume-degree-time"><?php echo $data[$index]['education year']?></div>
 								    </li>
-								    <li>
-								        <div class="resume-degree font-weight-bold"><?php echo 'BSc Maths and Physics';?></div>
-								        <div class="resume-degree-org"><?php echo 'Imperial College London';?></div>
-								        <div class="resume-degree-time"><?php echo '2010 - 2013';?></div>
-								    </li>
+
 							    </ul>
 						    </div>
 					    </section><!--//education-section-->
@@ -435,4 +431,3 @@ function calculateAge($dateOfBirth) {
 
 </body>
 </html> 
-
